@@ -1,0 +1,54 @@
+/*公共样式--开始*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+input, textarea {
+  outline: none;
+  border: none;
+}
+textarea {
+  resize: none;
+  overflow: auto;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after,.clearfix:before{
+  content: "";
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+  overflow:hidden;
+}
+.fl {
+  float: left
+}
+.fr {
+  float: right
+}
+.ellipse {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.inline{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
