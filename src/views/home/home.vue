@@ -10,7 +10,7 @@
         </li>
       </ul>
     </div>
-    <login v-if="newsAll.length === 0"/>
+   <!-- <login v-if="newsAll.length === 0"/>-->
   </div>
 </template>
 
