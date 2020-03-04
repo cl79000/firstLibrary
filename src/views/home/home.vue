@@ -10,7 +10,7 @@
         </li>
       </ul>
     </div>
-   <!-- <login v-if="newsAll.length === 0"/>-->
+    <login v-if="newsAll.length === 0"/>
   </div>
 </template>
 
@@ -22,7 +22,7 @@
     name: "home",
     data(){
       return {
-        newsAll:[]
+        newsAll:[],
       }
     },
     methods:{
@@ -42,14 +42,20 @@
     created() {
       this.getHomeNews();
     },
+    mounted() {
+      console.log($('.home'))
+    },
     components: {
-      login
+      login,
     },
   }
 </script>
 
 <style scoped lang="less">
-  .box {
-    width: 150px;
+  .home {
+    font-size: 12px;
+  }
+  label input {
+    border: 1px solid black;
   }
 </style>

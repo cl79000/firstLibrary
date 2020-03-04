@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 module.exports = {
   configureWebpack:{
     resolve:{
@@ -7,6 +9,13 @@ module.exports = {
         'commonJs':'@commonJs',
         'views':'@views',
       }
-    }
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        $:"jquery",
+        jQuery:"jquery",
+        "windows.jQuery":"jquery"
+      })
+    ]
   }
 };
